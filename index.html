@@ -10,6 +10,9 @@
       .tombol {
         cursor: pointer;
       }
+      #TampilData {
+        max-height: 60vh;
+      }
     </style>
     <title>kumpulan kata kata REST API</title>
   </head>
@@ -43,8 +46,14 @@
     <div class="container my-5">
       <div class="row justify-content-center flex-md-row-reverse">
         <div class="col-md-8">
-          <div class="rounded border py-4 px-2 shadow" id="TampilData">
+          <div
+            class="rounded border py-4 px-2 shadow overflow-auto bg-white"
+            id="TampilData"
+          >
             Tekan tombolnya dulu ngabs
+            <!--  -->
+
+            <!--  -->
           </div>
         </div>
         <div class="col-md-4 p-3">
@@ -52,14 +61,21 @@
             class="bg-secondary border mb-3 border-dark text-white rounded shadow p-2 fw-semibold text-uppercase text-center tombol"
             id="btnJokes"
           >
-            jokes Bapack bapack
+            Random jokes Bapack bapack
           </div>
           <!--  -->
           <div
             class="bg-secondary border mb-3 border-dark text-white rounded shadow p-2 fw-semibold text-uppercase text-center tombol"
             id="btnanime"
           >
-            Kata Bijak animeh
+            Random Kata Bijak animeh
+          </div>
+          <!--  -->
+          <div
+            class="bg-secondary border mb-3 border-dark text-white rounded shadow p-2 fw-semibold text-uppercase text-center tombol"
+            id="btnAnimeOnePiece"
+          >
+            Random Kata Bijak anime OnePiece
           </div>
           <!--  -->
         </div>
