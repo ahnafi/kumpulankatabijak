@@ -13,6 +13,9 @@
       #TampilData {
         max-height: 60vh;
       }
+      #content {
+        min-height: 80vh;
+      }
     </style>
     <title>kumpulan kata kata REST API</title>
   </head>
@@ -43,9 +46,9 @@
     </nav>
     <!-- navbar end -->
     <!-- content start -->
-    <div class="container my-5">
+    <div class="container my-5" id="content">
       <div class="row justify-content-center flex-md-row-reverse">
-        <div class="col-md-8">
+        <div class="col-md-8 pb-3">
           <div
             class="rounded border py-4 px-2 shadow overflow-auto bg-white"
             id="TampilData"
@@ -56,7 +59,7 @@
             <!--  -->
           </div>
         </div>
-        <div class="col-md-4 p-3">
+        <div class="col-md-4 px-3 pb-3">
           <div
             class="bg-secondary border mb-3 border-dark text-white rounded shadow p-2 fw-semibold text-uppercase text-center tombol"
             id="btnJokes"
@@ -73,15 +76,79 @@
           <!--  -->
           <div
             class="bg-secondary border mb-3 border-dark text-white rounded shadow p-2 fw-semibold text-uppercase text-center tombol"
+            id="btnAnimeNaruto"
+          >
+            Random Kata Bijak anime Naruto
+          </div>
+          <!--  -->
+          <div
+            class="bg-secondary border mb-3 border-dark text-white rounded shadow p-2 fw-semibold text-uppercase text-center tombol"
             id="btnAnimeOnePiece"
           >
-            Random Kata Bijak anime OnePiece
+            Random Kata Bijak anime One Piece
           </div>
           <!--  -->
         </div>
       </div>
     </div>
     <!-- content end -->
+    <!-- footer start -->
+    <footer>
+      <div class="footer bg-dark text-white">
+        <div class="container p-2">
+          <div class="row mt-5">
+            <div class="col-md-3 mb-3">
+              <img
+                src="https://ahnafi.my.id/img/ahnafi.jpg"
+                alt="myprofile"
+                width="75px"
+                class="rounded-circle"
+              />
+              <p class="my-1">Atik Ahnafi Sulthon</p>
+
+              <a
+                href="https://ahnafi.my.id"
+                target="_blank"
+                class="btn btn-primary"
+                >visit my website</a
+              >
+            </div>
+            <div class="col-md-5 mb-3">
+              <p>Quotes</p>
+              <blockquote>
+                <p>
+                  <em>
+                    "Jika kamu menghabiskan terlalu banyak waktu untuk
+                    memikirkan sesuatu, kamu tidak akan pernah
+                    menyelesaikannya." - Bruce Lee
+                    <br /><br />
+                    “Jangan tanyakan pada dirimu apa yang dibutuhkan dunia.
+                    Bertanyalah apa yang membuatmu hidup, kemudian kerjakan.
+                    Karena yang dibutuhkan dunia adalah orang yang antusias” -
+                    Harold Whitman</em
+                  >
+                </p>
+              </blockquote>
+            </div>
+            <div class="col-md-4">
+              Data diambil dari:
+              <p>kata anime : https://katanime.vercel.app/</p>
+              <p>
+                candaan api : https://candaan-api.vercel.app/api/text/random
+              </p>
+              terimakasih.
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 text-center">
+              <hr />
+              <p>Ahnafi &copy; All Right Reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
     <script src="js/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
