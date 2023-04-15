@@ -100,3 +100,41 @@ $('#btnAnimeOnePiece').on('click',function(){
     // 1-34
      animekataBijak(`getbyanime?anime=one%20piece&page=`);
 })
+// api.ibeng.tech/docs
+function apiIbeng(param){
+    $('#TampilData').html('LOADINGG!!!!');
+    $.getJSON(`https://api.ibeng.tech/api/random/${param}`,(i)=>{
+        
+        if (param == 'fakta?apikey=tamvan' || param == "katabijak?apikey=tamvan"){
+            let data = i.result
+            $('#TampilData').html(`
+                <p class="text-center">
+                    <em
+                    >"${data}"</em
+                    >
+                    </p>
+                `);
+            } else if (param == 'quotes?apikey=tamvan' ){
+            let data = i.result
+            $('#TampilData').html(`
+            <p class="text-center">
+            <em
+            >"${data.quotes}"</em
+            >
+            </p>
+            <p class="blockquote-footer text-center">${data.author} ~</p>
+        `);
+        }
+
+    })
+}
+
+$('#btnFakta').on('click',function(){
+    apiIbeng('fakta?apikey=tamvan')
+})
+$('#btnQuotes').on('click',function(){
+    apiIbeng('quotes?apikey=tamvan')
+})
+$('#btnKataBijak').on('click',function(){
+    apiIbeng('katabijak?apikey=tamvan')
+})
